@@ -1,0 +1,125 @@
+[12:06, 21/11/2026] patelprince6750: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodConnect | Blood Donor Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">🩸 BloodConnect</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#donors">Find Donor</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#register" class="nav-btn">Become a Donor</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Donate Blood,<br><span>Save Lives</span></h1>
+            <p>
+                Your one donation can save up to three lives.
+                Join BloodConnect and help someone in need.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#donors" class="btn-primary">Find a Donor</a>
+                <a href="#register" class="btn-secondary">Donate Blood</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Why BloodConnect?</h2>
+        <p>We connect blood donors with people who need blood in emergencies.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🩸 Easy Search</h3>
+                <p>Find donors by blood group.</p>
+            </div>
+
+            <div class="card">
+                <h3>❤️ Save Lives</h3>
+                <p>Your donation can make a big difference.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤝 Join Us</h3>
+                <p>Become a donor and help your community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="donors" id="donors">
+        <h2>Find Blood Donors</h2>
+
+        <div class="search-box">
+            <select id="bloodGroup">
+                <option value="">Select Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+            </select>
+
+            <input type="text" id="city" placeholder="Enter city">
+
+            <button onclick="searchDonors()">Search</button>
+        </div>
+
+        <div id="donorResults"></div>
+    </section>
+
+    <section class="register" id="register">
+        <h2>Become a Blood Donor</h2>
+
+        <form id="donorForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="number" id="age" placeholder="Age" required>
+
+            <select id="group" required>
+                <option value="">Select Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+            </select>
+
+            <input type="text" id="donorCity" placeholder="City" required>
+
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <button type="submit">Register as Donor</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <h3>🩸 BloodConnect</h3>
+        <p>Be a hero. Donate blood . Save lives.</p>
+        <p>Minor Project | Web Development Prince patel</p>
+        <p>© 2026 BloodConnect</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
